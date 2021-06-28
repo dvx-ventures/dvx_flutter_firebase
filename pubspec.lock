@@ -320,7 +320,7 @@ packages:
       name: flutter_colorpicker
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.0"
+    version: "0.4.0"
   flutter_icons:
     dependency: transitive
     description:
@@ -377,8 +377,8 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: bde85c40387647cf8cb6f2b8a365ebea0cb68e81
-      url: "git://github.com/sgehrman/flutter_shared"
+      resolved-ref: "3dc3fba0c7fc7f522bfb5d27a8fc07fe228b2f86"
+      url: "git://github.com/dvx-ventures/dvx_flutter"
     source: git
     version: "1.0.1"
   flutter_svg:

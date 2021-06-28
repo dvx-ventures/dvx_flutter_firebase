@@ -12,8 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_shared:
-    git: git://github.com/sgehrman/flutter_shared
-    # path: ../flutter_shared
+    git: git://github.com/dvx-ventures/dvx_flutter
+    # path: ./dvx_flutter
   avatar_glow: ^2.0.1
   bubble: ^1.2.1
   cloud_firestore: ^2.0.0
