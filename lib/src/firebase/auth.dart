@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart' as auth;
-import 'package:flutter_shared_extra/src/firebase/firebase_utils.dart';
+import 'package:dvx_flutter_firebase/src/firebase/firebase_utils.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter_shared/flutter_shared_web.dart';
+import 'package:dvx_flutter/dvx_flutter_web.dart';
 
 class SignInResult {
   const SignInResult({this.user, this.errorString});

@@ -2,10 +2,10 @@ import 'dart:async';
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_shared_extra/src/chat/chat_models.dart';
-import 'package:flutter_shared_extra/src/image/image_url_model.dart';
+import 'package:dvx_flutter_firebase/src/chat/chat_models.dart';
+import 'package:dvx_flutter_firebase/src/image/image_url_model.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:flutter_shared/flutter_shared_web.dart';
+import 'package:dvx_flutter/dvx_flutter_web.dart';
 
 class ChatInput extends StatefulWidget {
   const ChatInput({

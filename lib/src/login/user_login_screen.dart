@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shared_extra/src/firebase/firebase_user_provider.dart';
-import 'package:flutter_shared_extra/src/login/user_login_view.dart';
+import 'package:dvx_flutter_firebase/src/firebase/firebase_user_provider.dart';
+import 'package:dvx_flutter_firebase/src/login/user_login_view.dart';
 import 'package:provider/provider.dart';
 
 class UserLoginScreen extends StatefulWidget {

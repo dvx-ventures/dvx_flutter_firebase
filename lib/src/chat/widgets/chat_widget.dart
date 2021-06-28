@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shared_extra/src/chat/chat_models.dart';
-import 'package:flutter_shared_extra/src/chat/widgets/chat_input.dart';
-import 'package:flutter_shared_extra/src/chat/widgets/message_listview.dart';
+import 'package:dvx_flutter_firebase/src/chat/chat_models.dart';
+import 'package:dvx_flutter_firebase/src/chat/widgets/chat_input.dart';
+import 'package:dvx_flutter_firebase/src/chat/widgets/message_listview.dart';
 
 class ChatWidget extends StatefulWidget {
   const ChatWidget({

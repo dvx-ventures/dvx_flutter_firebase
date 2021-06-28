@@ -1,9 +1,9 @@
 import 'package:bubble/bubble.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_parsed_text/flutter_parsed_text.dart';
-import 'package:flutter_shared_extra/src/chat/chat_models.dart';
+import 'package:dvx_flutter_firebase/src/chat/chat_models.dart';
 import 'package:intl/intl.dart';
-import 'package:flutter_shared/flutter_shared.dart';
+import 'package:dvx_flutter/dvx_flutter.dart';
 
 class MessageContainer extends StatelessWidget {
   const MessageContainer({

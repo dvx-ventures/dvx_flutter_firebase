@@ -176,6 +176,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
+  dvx_flutter:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: d55db2ee515c4f1b9a6427ac94766be1bc52212b
+      url: "git://github.com/dvx-ventures/dvx_flutter"
+    source: git
+    version: "1.0.1"
   email_validator:
     dependency: transitive
     description:
@@ -372,15 +381,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.2"
-  flutter_shared:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "9837f8d452d0da08a09c1dd56cd46f9499a4076e"
-      url: "git://github.com/dvx-ventures/dvx_flutter"
-    source: git
-    version: "1.0.1"
   flutter_svg:
     dependency: transitive
     description:

@@ -1,9 +1,9 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
-import 'package:flutter_shared/flutter_shared_web.dart';
-import 'package:flutter_shared_extra/src/chat/chat_models.dart';
-import 'package:flutter_shared_extra/src/chat/chat_screen_contents.dart';
-import 'package:flutter_shared_extra/src/firebase/firestore.dart';
+import 'package:dvx_flutter/dvx_flutter_web.dart';
+import 'package:dvx_flutter_firebase/src/chat/chat_models.dart';
+import 'package:dvx_flutter_firebase/src/chat/chat_screen_contents.dart';
+import 'package:dvx_flutter_firebase/src/firebase/firestore.dart';
 
 class ChatAdminScreenContents extends StatefulWidget {
   const ChatAdminScreenContents({

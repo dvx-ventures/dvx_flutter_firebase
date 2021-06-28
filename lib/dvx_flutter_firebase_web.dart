@@ -1,4 +1,4 @@
-library flutter_shared_extra_web;
+library dvx_flutter_firebase_web;
 
 export 'src/firebase/auth.dart';
 export 'src/firebase/firebase_user_provider.dart';

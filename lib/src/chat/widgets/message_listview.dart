@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_shared_extra/src/chat/chat_models.dart';
-import 'package:flutter_shared_extra/src/chat/widgets/avatar_container.dart';
-import 'package:flutter_shared_extra/src/chat/widgets/message_container.dart';
+import 'package:dvx_flutter_firebase/src/chat/chat_models.dart';
+import 'package:dvx_flutter_firebase/src/chat/widgets/avatar_container.dart';
+import 'package:dvx_flutter_firebase/src/chat/widgets/message_container.dart';
 import 'package:intl/intl.dart';
-import 'package:flutter_shared/flutter_shared_web.dart';
+import 'package:dvx_flutter/dvx_flutter_web.dart';
 
 class MessageListView extends StatefulWidget {
   const MessageListView({

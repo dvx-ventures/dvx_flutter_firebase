@@ -1,7 +1,7 @@
-import 'package:flutter_shared/flutter_shared_web.dart';
-import 'package:flutter_shared_extra/src/firebase/firestore.dart';
-import 'package:flutter_shared_extra/src/firebase/serializable.dart';
-import 'package:flutter_shared_extra/src/image/image_url_model.dart';
+import 'package:dvx_flutter/dvx_flutter_web.dart';
+import 'package:dvx_flutter_firebase/src/firebase/firestore.dart';
+import 'package:dvx_flutter_firebase/src/firebase/serializable.dart';
+import 'package:dvx_flutter_firebase/src/image/image_url_model.dart';
 
 class ChatUser {
   ChatUser({

@@ -1,4 +1,4 @@
-name: flutter_shared_extra
+name: dvx_flutter_firebase
 description: A new Flutter package project.
 version: 1.0.1
 author: null
@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_shared:
+  dvx_flutter:
     git: git://github.com/dvx-ventures/dvx_flutter
     # path: ./dvx_flutter
   avatar_glow: ^2.0.1

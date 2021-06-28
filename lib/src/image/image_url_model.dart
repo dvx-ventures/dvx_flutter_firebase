@@ -1,9 +1,9 @@
 import 'dart:typed_data';
 
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter_shared/flutter_shared_web.dart';
-import 'package:flutter_shared_extra/src/firebase/firestore.dart';
-import 'package:flutter_shared_extra/src/firebase/serializable.dart';
+import 'package:dvx_flutter/dvx_flutter_web.dart';
+import 'package:dvx_flutter_firebase/src/firebase/firestore.dart';
+import 'package:dvx_flutter_firebase/src/firebase/serializable.dart';
 import 'package:image/image.dart' as img;
 
 class ImageUrl extends Serializable {
