@@ -24,8 +24,6 @@ class _LoginDialogState extends State<LoginDialog> {
   bool _autovalidate = false;
   String? _initialValue;
   String? _initialPassword;
-  final FocusNode _passwordFocus = FocusNode();
-  final FocusNode _emailFocus = FocusNode();
   int sentResetEmail = 0;
 
   @override
@@ -47,15 +45,6 @@ class _LoginDialogState extends State<LoginDialog> {
         _autovalidate = true;
       });
     }
-  }
-
-  void _fieldFocusChange(
-    BuildContext context,
-    FocusNode currentFocus,
-    FocusNode nextFocus,
-  ) {
-    currentFocus.unfocus();
-    FocusScope.of(context).requestFocus(nextFocus);
   }
 
   String _resetEmailText() {
@@ -90,7 +79,6 @@ class _LoginDialogState extends State<LoginDialog> {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               TextFormField(
-                focusNode: _emailFocus,
                 autocorrect: false,
                 autovalidateMode: _autovalidate
                     ? AutovalidateMode.always
@@ -104,9 +92,7 @@ class _LoginDialogState extends State<LoginDialog> {
                 keyboardType: TextInputType
                     .emailAddress, // Use email input type for emails.
                 textInputAction: TextInputAction.next,
-                onFieldSubmitted: (term) {
-                  _fieldFocusChange(context, _emailFocus, _passwordFocus);
-                },
+
                 decoration: const InputDecoration(
                   icon: Icon(Icons.email),
                   hintText: 'Email Address',
@@ -127,7 +113,6 @@ class _LoginDialogState extends State<LoginDialog> {
                 // The validator receives the text that the user has entered.
                 autocorrect: false,
                 textInputAction: TextInputAction.done,
-                focusNode: _passwordFocus,
                 autovalidateMode: _autovalidate
                     ? AutovalidateMode.always
                     : AutovalidateMode.disabled,
