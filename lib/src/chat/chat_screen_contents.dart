@@ -18,7 +18,7 @@ class ChatScreenContents extends StatefulWidget {
     required this.name,
   });
 
-  final Stream<List<ChatMessage?>> stream;
+  final Stream<List<ChatMessage>> stream;
   final bool isAdmin;
   final String? toUid;
   final String title;
@@ -145,7 +145,7 @@ class _ChatScreenContentsState extends State<ChatScreenContents> {
         title: Text(widget.title),
         actions: [_scrollToBottomButton()],
       ),
-      body: StreamBuilder<dynamic>(
+      body: StreamBuilder<List<ChatMessage>>(
         stream: widget.stream,
         builder: (context, snap) {
           bool hasData = false;
@@ -160,7 +160,7 @@ class _ChatScreenContentsState extends State<ChatScreenContents> {
           }
 
           if (hasData) {
-            List<ChatMessage>? messages = snap.data as List<ChatMessage>?;
+            List<ChatMessage>? messages = snap.data;
 
             if (Utils.isNotEmpty(messages)) {
               messages!.sort((ChatMessage a, ChatMessage b) {

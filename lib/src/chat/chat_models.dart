@@ -118,7 +118,7 @@ class ChatMessage extends Serializable {
 }
 
 class ChatMessageUtils {
-  static Stream<List<ChatMessage?>> stream({
+  static Stream<List<ChatMessage>> stream({
     List<WhereQuery>? where,
   }) {
     final c = Collection('messages');

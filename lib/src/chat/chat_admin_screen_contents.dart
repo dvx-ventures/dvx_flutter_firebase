@@ -20,7 +20,7 @@ class ChatAdminScreenContents extends StatefulWidget {
 }
 
 class _ChatAdminScreenContentsState extends State<ChatAdminScreenContents> {
-  final Stream<List<ChatMessage?>> stream = ChatMessageUtils.stream(
+  final Stream<List<ChatMessage>> stream = ChatMessageUtils.stream(
     where: [WhereQuery('', 'admin')],
   );
 
@@ -28,9 +28,9 @@ class _ChatAdminScreenContentsState extends State<ChatAdminScreenContents> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Chat Admin')),
-      body: StreamBuilder<dynamic>(
+      body: StreamBuilder<List<ChatMessage>>(
         stream: stream,
-        builder: (BuildContext context, AsyncSnapshot snap) {
+        builder: (context, snap) {
           bool hasData = false;
 
           if (snap.hasError) {
@@ -43,7 +43,7 @@ class _ChatAdminScreenContentsState extends State<ChatAdminScreenContents> {
           }
 
           if (hasData) {
-            final List<ChatMessage> resources = snap.data as List<ChatMessage>;
+            final List<ChatMessage> resources = snap.data ?? [];
 
             return ListView.builder(
               itemCount: resources.length,

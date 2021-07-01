@@ -46,7 +46,7 @@ class _LoginPhoneDialogState extends State<LoginPhoneDialog> {
           keyboardType: TextInputType.phone,
           controller: _phoneController,
           inputFormatters: PhoneInputUtils.inputFormatters(),
-          validator: PhoneInputUtils.validator as String? Function(String?)?,
+          validator: (v) => PhoneInputUtils.validator(v),
         ),
       ];
     }

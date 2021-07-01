@@ -181,7 +181,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: c690fceffff078f5d3e99c05419ad8dd0096da97
+      resolved-ref: "08cbcc88c23674f43887c9b1e2768df17d39d9ad"
       url: "git://github.com/dvx-ventures/dvx_flutter"
     source: git
     version: "1.0.1"

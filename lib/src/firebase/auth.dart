@@ -112,19 +112,23 @@ class AuthService {
     try {
       _googleSignIn = GoogleSignIn();
 
-      final GoogleSignInAccount googleSignInAccount =
-          await (_googleSignIn!.signIn() as FutureOr<GoogleSignInAccount>);
-      final GoogleSignInAuthentication googleAuth =
-          await googleSignInAccount.authentication;
+      final GoogleSignInAccount? googleSignInAccount =
+          await _googleSignIn!.signIn();
 
-      final auth.AuthCredential credential = auth.GoogleAuthProvider.credential(
-        accessToken: googleAuth.accessToken,
-        idToken: googleAuth.idToken,
-      );
+      if (googleSignInAccount != null) {
+        final GoogleSignInAuthentication googleAuth =
+            await googleSignInAccount.authentication;
 
-      final auth.UserCredential authResult =
-          await fbAuth.signInWithCredential(credential);
-      user = authResult.user;
+        final auth.AuthCredential credential =
+            auth.GoogleAuthProvider.credential(
+          accessToken: googleAuth.accessToken,
+          idToken: googleAuth.idToken,
+        );
+
+        final auth.UserCredential authResult =
+            await fbAuth.signInWithCredential(credential);
+        user = authResult.user;
+      }
     } on auth.FirebaseAuthException catch (error) {
       errorString = error.message;
 
